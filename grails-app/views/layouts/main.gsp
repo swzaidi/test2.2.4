@@ -23,6 +23,7 @@
 	</head>
 	<body>
  <h1><g:pageProperty name="page.index"/></h1>
+	<sample:allPageProperties></sample:allPageProperties>
 		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
