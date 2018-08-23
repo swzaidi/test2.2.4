@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-                <parameter name="index" value="this is index, do you see me in main"/>
+		<sample:allPageProperties msg="index header before param"></sample:allPageProperties>
+        <parameter name="headIndex" value="this is index, do you see me in main"/>
 		<meta name="layout" content="main"/>
+		<sample:allPageProperties msg="index header after param"></sample:allPageProperties>
 		<title>Welcome to Grails</title>
 		<style type="text/css" media="screen">
 			#status {
@@ -82,6 +84,8 @@
 		</style>
 	</head>
 	<body>
+	    <parameter name="bodyIndex" value="this is index, do you see me in main"/>
+	    <sample:allPageProperties msg="index body"></sample:allPageProperties>
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div id="status" role="complementary">
 			<h1>Application Status</h1>
